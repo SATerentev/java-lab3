@@ -1,5 +1,13 @@
 public class Program {
     public static void main(){
-        System.out.println("Hello world");
+        MusicalInstrument[] instruments = new MusicalInstrument[20];
+
+        for (int i = 0; i < 20; i++){
+            instruments[i] = Factory.CreateRandomMusicalInstrument();
+        }
+
+        for (MusicalInstrument instrument : instruments) {
+            System.out.println(instrument.toString() + " " + instrument.getClass());
+        }
     }
 }

@@ -1,0 +1,32 @@
+import java.util.Random;
+
+public final class Factory {
+    private Factory() { }
+    private final static Random rand = new Random();
+
+    public static MusicalInstrument CreateRandomMusicalInstrument(){
+        String[] names = new String[] {"name 1", "name 2", "name 3", "name 4", "name 5", "name 6", "name 7", "name 8"};
+
+        switch (rand.nextInt(3)){
+            case 0:
+                return new Guitar(
+                        names[rand.nextInt(names.length)], // Берем случайное имя из names[]
+                        rand.nextInt(12) // Случайно число от 0 до 12
+                );
+            case 1:
+                return new ElectricGuitar(
+                        names[rand.nextInt(names.length)], // Случайное имя из names[]
+                        rand.nextInt(12), // Случайное число от 0 до 12
+                        PowerSource.values()[rand.nextInt(PowerSource.values().length)] // Случайное значение из PowerSource
+                );
+            case 2:
+                return new Piano(
+                        names[rand.nextInt(names.length)], // Случайное имя из names[]
+                        rand.nextInt(200), // Случайное число от 0 до 200
+                        KeyLayout.values()[rand.nextInt(KeyLayout.values().length)] // Случайное значение из KeyLayout
+                );
+            default:
+                return null;
+        }
+    }
+}
