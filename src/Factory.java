@@ -3,11 +3,11 @@ import java.util.Random;
 public final class Factory {
     private Factory() { }
     private final static Random rand = new Random();
+    private final static int TYPES_COUNT = 3;
+    private final static String[] names = new String[] {"name 1", "name 2", "name 3", "name 4", "name 5", "name 6", "name 7", "name 8"};
 
-    public static MusicalInstrument CreateRandomMusicalInstrument(){
-        String[] names = new String[] {"name 1", "name 2", "name 3", "name 4", "name 5", "name 6", "name 7", "name 8"};
-
-        switch (rand.nextInt(3)){
+    public static MusicalInstrument CreateRandomMusicalInstrument() {
+        switch (rand.nextInt(TYPES_COUNT)){
             case 0:
                 return new Guitar(
                         names[rand.nextInt(names.length)], // Берем случайное имя из names[]
@@ -26,7 +26,7 @@ public final class Factory {
                         KeyLayout.values()[rand.nextInt(KeyLayout.values().length)] // Случайное значение из KeyLayout
                 );
             default:
-                return null;
+                throw new IllegalStateException("Произошло что-то плохое");
         }
     }
 }
