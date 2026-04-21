@@ -25,7 +25,7 @@ public class ElectricGuitar extends Guitar{
 
     @Override
     public String toString(){
-        return "Электрогитара - " + getName() + ", " + getStringsCount() + " струн, источник питания - " + powerSource + ".";
+        return "Электрогитара - " + getName() + ", количество струн - " + getStringsCount() + ", источник питания - " + powerSource + ".";
     }
 
     @Override

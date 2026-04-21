@@ -25,7 +25,7 @@ public class Guitar extends MusicalInstrument{
 
     @Override
     public String toString(){
-        return "Гитара - " + getName() + ", " + stringsCount + " струн.";
+        return "Гитара - " + getName() + ", количество струн - " + stringsCount + ".";
     }
 
     @Override
