@@ -23,11 +23,6 @@ public abstract class MusicalInstrument {
     }
 
     @Override
-    public String toString() {
-        return "Музыкальный инструмент - " + name;
-    }
-
-    @Override
     public boolean equals(Object obj){
         if (obj == this) return true;
         if (obj == null) return false;

@@ -24,6 +24,11 @@ public class ElectricGuitar extends Guitar{
     }
 
     @Override
+    public String toString(){
+        return "Электрогитара - " + getName() + ", " + getStringsCount() + " струн, источник питания - " + powerSource + ".";
+    }
+
+    @Override
     public boolean equals(Object obj){
         if (!super.equals(obj)) return false;
 

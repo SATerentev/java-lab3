@@ -43,6 +43,11 @@ public class Piano extends MusicalInstrument{
     }
 
     @Override
+    public String toString(){
+        return "Фортепиано - " + getName() + ", количество клавиш - " + keysCount + ", раскладка - " + keyLayout + ".";
+    }
+
+    @Override
     public boolean equals(Object obj){
         if (!super.equals(obj)) return false;
 

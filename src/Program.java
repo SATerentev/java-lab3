@@ -7,7 +7,7 @@ public class Program {
         }
 
         for (MusicalInstrument instrument : instruments) {
-            System.out.println(instrument.toString() + " " + instrument.getClass());
+            System.out.println(instrument.toString() + " | class - " + instrument.getClass());
         }
     }
 }

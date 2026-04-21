@@ -24,6 +24,11 @@ public class Guitar extends MusicalInstrument{
     }
 
     @Override
+    public String toString(){
+        return "Гитара - " + getName() + ", " + stringsCount + " струн.";
+    }
+
+    @Override
     public boolean equals(Object obj){
         if (!super.equals(obj)) return false;
 
