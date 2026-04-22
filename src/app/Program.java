@@ -1,5 +1,7 @@
 package app;
 
+import Game.Interactable;
+import Game.MeleeWeapon;
 import Music.MusicalInstrument;
 
 public class Program {
@@ -38,6 +40,18 @@ public class Program {
 
         if (result3.IsSuccess()){
             System.out.println("Максимальное количество клавиш на фортепиано с октавной раскладкой - " + result3.Value());
+        }
+
+        System.out.println("\n\n\n_______________________________________\n\n\n");
+
+        Interactable[] items = new Interactable[5];
+
+        for(int i = 0; i < 5; i++){
+            items[i] = new MeleeWeapon();
+        }
+
+        for(var item : items){
+            item.interact();
         }
     }
 }
