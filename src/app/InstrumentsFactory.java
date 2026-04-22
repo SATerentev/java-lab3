@@ -4,8 +4,8 @@ import Music.*;
 
 import java.util.Random;
 
-public final class Factory {
-    private Factory() { }
+public final class InstrumentsFactory {
+    private InstrumentsFactory() { }
     private final static Random rand = new Random();
     private final static int TYPES_COUNT = 3;
     private final static String[] names = new String[] {"name 1", "name 2", "name 3", "name 4", "name 5", "name 6", "name 7", "name 8"};

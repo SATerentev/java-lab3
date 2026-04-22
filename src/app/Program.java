@@ -7,7 +7,7 @@ public class Program {
         MusicalInstrument[] instruments = new MusicalInstrument[20];
 
         for (int i = 0; i < 20; i++){
-            instruments[i] = Factory.CreateRandomMusicalInstrument();
+            instruments[i] = InstrumentsFactory.CreateRandomMusicalInstrument();
         }
 
         for (MusicalInstrument instrument : instruments) {
