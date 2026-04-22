@@ -1,3 +1,7 @@
+package Music;
+
+import app.Result;
+
 public abstract class MusicalInstrument {
     private String name;
 

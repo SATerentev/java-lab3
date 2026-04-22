@@ -1,3 +1,11 @@
+package app;
+
+import Music.Guitar;
+import Music.KeyLayout;
+import Music.MusicalInstrument;
+import Music.Piano;
+import app.Result;
+
 public final class Services {
     private Services() { }
     public static Result<Guitar> findFirstGuitarWithMaxStrings(MusicalInstrument[] instruments){

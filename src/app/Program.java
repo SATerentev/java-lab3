@@ -1,3 +1,7 @@
+package app;
+
+import Music.MusicalInstrument;
+
 public class Program {
     public static void main(){
         MusicalInstrument[] instruments = new MusicalInstrument[20];

@@ -1,3 +1,7 @@
+package Music;
+
+import app.Result;
+
 public class ElectricGuitar extends Guitar{
     private PowerSource powerSource;
 

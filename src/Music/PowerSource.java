@@ -1,3 +1,5 @@
+package Music;
+
 public enum PowerSource {
     BATTERY, // Батарейки
     RECHARGEABLE, // Аккумуляторы

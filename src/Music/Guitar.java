@@ -1,3 +1,7 @@
+package Music;
+
+import app.Result;
+
 public class Guitar extends MusicalInstrument{
     private int stringsCount;
 
